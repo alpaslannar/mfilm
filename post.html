@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>MFilm</title>
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- Font-awesome CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="post.html">POST</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="category.html">CATEGORY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="search.html">SEARCH</a>
+                      </li>
+                    </ul>
+                    <form class="mnySearchBox">
+                      <input class="SearchBox" type="search" placeholder="Search" aria-label="Search">
+                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+        </header><!-- Header end -->
+        
+        <section id="videoPart">
+            <div class="movieBg">
+                <div class="container">
+                    <div class="videoBg">
+                        <div class="videoMenu">                         
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active alternate-1" id="pills-alternate-1-tab" data-toggle="pill" href="#pills-alternate-1" role="tab" aria-controls="pills-alternate-1" aria-expanded="true"><i class="fa fa-youtube" aria-hidden="true"></i><span>Youtube</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link alternate-2" id="pills-alternate-2-tab" data-toggle="pill" href="#pills-alternate-2" role="tab" aria-controls="pills-alternate-2" aria-expanded="true"><i class="fa fa-vimeo-square" aria-hidden="true"></i><span>Vimeo</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link alternate-3" id="pills-alternate-3-tab" data-toggle="pill" href="#pills-alternate-3" role="tab" aria-controls="pills-alternate-3" aria-expanded="true"><i class="fa fa-film" aria-hidden="true"></i><span>Alternate</span></a>
+                                </li>
+                                <a href="#" class="nav-link reportBtn"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><span>Report This</span></a>
+                            </ul>
+                        </div><!-- Movie Menu -->
+                        <div class="row">   
+                            <div class="tab-content mnyVideo col-lg-8 col-md-12" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-alternate-1" role="tabpanel" aria-labelledby="pills-alternate-1-tab">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r_rSAbYyIq0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-alternate-2" role="tabpanel" aria-labelledby="pills-alternate-2-tab">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/223278112" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-alternate-3" role="tabpanel" aria-labelledby="pills-alternate-3-tab">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/r_rSAbYyIq0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adsArea col-lg-4">
+                                <h3 class="adTitle"><i class="fa fa-adn" aria-hidden="true"></i>Sponsor Area</h3>
+                                <img class="img-fluid" src="img/350xAd.jpg" alt="Ad 1">
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- videoBg -->
+                </div><!-- container -->
+            </div><!-- background -->
+        </section><!-- video section -->
+        <section id="movieLikeBox">
+            <div class="container">
+                    <div class="likeBox">
+                        <div class="d-flex justify-content-start">
+                            <div class="p-2 rateMovie">
+                                <div class="stars">
+                                    <form action="#">
+                                        <span>Rate Movie:</span>
+                                        <input class="star star-5" id="star-5" type="radio" name="star"/>
+                                        <label class="star star-5" for="star-5"></label>
+                                        <input class="star star-4" id="star-4" type="radio" name="star"/>
+                                        <label class="star star-4" for="star-4"></label>
+                                        <input class="star star-3" id="star-3" type="radio" name="star"/>
+                                        <label class="star star-3" for="star-3"></label>
+                                        <input class="star star-2" id="star-2" type="radio" name="star"/>
+                                        <label class="star star-2" for="star-2"></label>
+                                        <input class="star star-1" id="star-1" type="radio" name="star"/>
+                                        <label class="star star-1" for="star-1"></label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="p-2 movieLike"><a href="#" class="like"><i class="fa fa-heart" aria-hidden="true"></i>Like</a></div>
+                            <div class="p-2 fLike"><a href="#" class="faceLike"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a></div>
+                            <div class="p-2 tLike"><a href="#" class="twLike"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></div>
+                            <div class="p-2 imdb"><img src="img/imdb.png" alt="imdb"><span>8.1</span></div>
+                            <div class="ml-auto p-2 mCounter"><span class="movieViewCount"><i class="fa fa-eye" aria-hidden="true"></i>14256</span></div>
+                        </div>
+                    </div>
+            </div><!-- conteiner -->
+        </section><!-- movieLikeBox -->
+        
+        <section id="mainContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="movieDescriptitonPart">
+                        <div class="d-flex justify-content-start">
+                            <div class="p-2 movDescBg"><span class="movDesc">Movie Details</span></div>
+                            <div class="p-2"><a class="movieTitle"><h1>The Foreigner</h1></a></div>
+                            <div class="ml-auto p-2"><a href="#" class="movieCategory"><p>Action</p></a></div>
+                        </div><!-- top flex box -->
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-3 movieDetails">
+                                <img class="img-fluid movieImg" src="img/film-poster-15.jpg" alt="movie alt">
+                            </div>
+                            <div class="col-lg-9 col-sm-9">
+                                <div class="movieCountry">
+                                    <div class="row">
+                                    <span class="mnyButtonRed"><i class="fa fa-ticket" aria-hidden="true"></i>Release Date: <em class="mDate">2017</em></span>
+                                    <span class="mnyButtonRed"><i class="fa fa-flag" aria-hidden="true"></i>Country: <em class="mCountry">USA</em></span>
+                                    <span class="mnyButtonRed"><i class="fa fa-clock-o" aria-hidden="true"></i>Duration: <em class="mTime">1h 54min</em></span>
+                                    </div>
+                                </div>
+                                <div class="aboutMovie">
+                                    <p class="movieHistory"><em>About Movie:</em>A humble businessman with a buried past seeks justice when his daughter is killed in an act of terrorism. A cat-and-mouse conflict ensues with a government official, whose past may hold clues to the killers' identities.</p>
+                                    <p class="movieDirector"><em>Director:</em>Martin Campbell</p>
+                                    <p class="movieActor"><em>Stars:</em> Jackie Chan, Pierce Brosnan, Charlie Murphy, Michael McElhatton, Orla Brady, Katie Leung, Simon Kunz</p>
+                                </div>
+                                <div class="movieTags">
+                                    <span class="mnyButtonYellow"><i class="fa fa-tags" aria-hidden="true"></i><span>Tags</span></span><a href="#">First Tag Goes Here</a><a href="#">First Tag Goes Here</a><a href="#">First Tag Goes Here</a>
+                                </div>
+                            </div>
+                        </div><!-- row -->
+                            <div class="d-flex justify-content-end commentTitle">
+                                <div class="mr-auto p-2"><h1><i class="fa fa-comments-o" aria-hidden="true"></i>Comments</h1></div>
+                                <div class="p-2 commentCount"><p>1 Comment</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="avatar col-lg-2 col-sm-3">
+                                    <img class="img-fluid" src="img/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="commentarName col-lg-10 col-sm-9">
+                                    <h3>Mehmet Nar</h3>
+                                    <p class="commentarName">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                                    <div class="d-flex replyComment justify-content-start">
+                                        <div class="ml-auto p-2"><a class="replyBtn" href="#">Reply</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="leaveComment">
+                                    <form class="container" id="needs-validation" novalidate>
+                                        <div class="row">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your comment goes here..."></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control form-control-sm" id="validationCustom01" placeholder="Your Name" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a name.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="email" class="form-control form-control-sm" id="validationCustom02" placeholder="Email Address" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide an email address.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button class="btn btn-danger btn-sm btn-block float-right" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- movieDescriptitonPart -->
+                    </div><!-- col-9 -->
+                    <aside class="col-lg-3">
+                        <div class="sidebar">
+                            <div class="sidebarTitle"><h1><i class="fa fa-bars" aria-hidden="true"></i>Related Movies</h1></div>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 relatedMovie">
+                                    <a href="#"><img class="img-fluid rImg" src="img/film-poster-1.jpg" alt="image"></a>
+                                    <div class="d-flex justify-content-end">
+                                        <div class="mr-auto p-2"><span><img src="img/imdb.png" alt="imdb">6.8</span></div>
+                                        <div class="p-2"><span class="mQuality">1080p</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 relatedMovie">
+                                    <a href="#"><img class="img-fluid rImg" src="img/film-poster-6.jpg" alt="image"></a>
+                                    <div class="d-flex justify-content-end">
+                                        <div class="mr-auto p-2"><span><img src="img/imdb.png" alt="imdb">6.8</span></div>
+                                        <div class="p-2"><span class="mQuality">1080p</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 relatedMovie">
+                                    <a href="#"><img class="img-fluid rImg" src="img/film-poster-9.jpg" alt="image"></a>
+                                    <div class="d-flex justify-content-end">
+                                        <div class="mr-auto p-2"><span><img src="img/imdb.png" alt="imdb">6.8</span></div>
+                                        <div class="p-2"><span class="mQuality">1080p</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 relatedMovie">
+                                    <a href="#"><img class="img-fluid rImg" src="img/film-poster-11.jpg" alt="image"></a>
+                                    <div class="d-flex justify-content-end">
+                                        <div class="mr-auto p-2"><span><img src="img/imdb.png" alt="imdb">6.8</span></div>
+                                        <div class="p-2"><span class="mQuality">1080p</span></div>
+                                    </div>
+                                </div>
+                            </div><!-- row -->
+                            <div class="sidebarAds"><h1><i class="fa fa-adn" aria-hidden="true"></i>Sponsor Area</h1></div>
+                            <img class="img-fluid sAds" src="img/250X340-AD.jpg" alt="image">
+                        </div><!-- Sidebar -->
+                    </aside>
+                </div><!-- row -->
+            </div><!-- Container -->
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="d-flex justify-content-start">
+                    <div class="p-2 fLeft"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+                    <div class="ml-auto p-2 fRight"><span>&copy;2017</span><a class="homeLink" href="#">Manaylab.</a></div>
+                </div>
+            </div>
+        </footer>
+        <!-- Main JavaScript -->
+        <script src="script.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </body>
+</html>
